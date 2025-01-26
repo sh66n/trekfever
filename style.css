@@ -1,0 +1,574 @@
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: #d9d9d9;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 0;
+}
+
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  position: fixed;
+  background-color: #578cff;
+  display: flex;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar .brand {
+  color: white;
+  font-size: 2rem;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .link {
+  display: flex;
+}
+
+.navbar .link .link-item:hover {
+}
+
+.navbar .link .link-item {
+  color: white;
+  margin-right: 2rem;
+  font-size: large;
+}
+
+.navbar .container {
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem 2rem 4rem;
+}
+
+.main-content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.main-content-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem 0 2rem;
+}
+
+.main-content-image {
+  width: 50%;
+}
+
+.main-content-text h1 {
+  color: #578cff;
+  width: 100%;
+  font-size: 7rem;
+  padding: 0;
+  line-height: 0;
+}
+
+.main-content-text div {
+  color: white;
+  font-size: 3rem;
+}
+
+.image-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 2rem 0 2rem;
+}
+
+.image {
+  width: 10rem;
+  height: 30rem;
+  z-index: 1;
+}
+
+.sunset-with-friends {
+  background-image: url("public/sunset-with-friends.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(0, 6rem);
+}
+
+.walk-in-the-woods {
+  background-image: url("public/walk-in-the-woods.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(0, 3rem);
+}
+.death-is-near {
+  background-image: url("public/death-is-near.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.destinations {
+  height: 100vh;
+  width: 100%;
+  background-color: #c5c5c5;
+  display: flex;
+}
+
+.vinland {
+  background-image: url("public/vinland.jpg");
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.destinations-text {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.destinations-text h2 {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  font-weight: 100;
+}
+
+button {
+  all: unset;
+  padding: 14px;
+  border-radius: 1rem;
+  background-color: #578cff;
+  cursor: pointer;
+  color: white;
+}
+
+.destinations-text button:hover {
+  filter: brightness(80%); /* Darkens the button by reducing brightness */
+}
+
+.testimonials h2 {
+  color: #578cff;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem 0 2rem 0;
+}
+
+.card {
+  height: 20rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+.avatar {
+  height: 5rem;
+  width: 5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  border-radius: 100%;
+  background-image: url("public/fem-avatar.png");
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 20px;
+  color: #578cff;
+  margin-bottom: 2rem;
+}
+
+.testimony {
+  color: white;
+  font-weight: 100;
+}
+
+.footer-img {
+  width: 100%;
+  height: 10rem;
+  background-image: url("public/footer.png");
+  background-size: cover;
+}
+
+.footer-content {
+  height: 10rem;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+}
+
+footer {
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: #00bcd4;
+}
+
+.footer p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.contact-body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.camp-img-section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camp-img {
+  height: 30rem;
+  width: 30rem;
+  background-image: url("public/trekking.png");
+  background-size: cover;
+}
+
+.contact-form-section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.contact-form {
+  height: 30rem;
+  width: 30rem;
+  background-color: #578cff;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(0, 3rem);
+}
+
+.contact-form h2 {
+  color: white;
+  font-size: 3rem;
+}
+
+.contact-attr {
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-form input {
+  border: none;
+  display: block;
+  padding: 10px 15px 10px 15px;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.textbox textarea {
+  padding: 10px 15px 10px 15px;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  color: #578cff;
+  background-color: white;
+}
+
+.about-body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-box {
+}
+
+.tl {
+  background-image: url("public/about-img-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 10px 10px 0;
+}
+
+.t {
+  background-image: url("public/about-img-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 0 10px 0;
+}
+
+.tr {
+  background-image: url("public/about-img-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 0 10px 10px;
+}
+
+.cl {
+  background-image: url("public/about-img-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 10px 0 0;
+}
+
+.cr {
+  background-image: url("public/about-img-5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 0 0 10px;
+}
+
+.bl {
+  background-image: url("public/about-img-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px 10px 0 0;
+}
+
+.b {
+  background-image: url("public/about-img-7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px 0 0 0;
+}
+
+.br {
+  background-image: url("public/about-img-8.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px 0 0 10px;
+}
+
+.c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #578cff;
+  gap: 1rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.c div {
+  color: black;
+}
+
+.card-container {
+  padding-top: 8rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card-image {
+  color: black;
+  border-radius: 2rem 2rem 0 0;
+  height: 67%;
+  width: 100%;
+}
+
+.card-dest {
+  height: 30rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  font-weight: bold;
+}
+
+.card-text {
+  padding: 0 1rem 0 1rem;
+  width: 100%;
+}
+
+.image-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0 1rem 0 1rem;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.image-text div {
+  margin-bottom: 1rem;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: black;
+}
+
+.icon {
+  color: #578cff;
+  height: 35px;
+  width: 35px;
+}
+
+.book-btn {
+  flex-grow: 1;
+  background-color: #578cff;
+  width: 100%;
+  border-radius: 0 0 2rem 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-btn:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+.kedarkantha {
+  background-image: url("public/kedarnath.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.deo-tibba {
+  background-image: url("public/deo-tibba.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.chandrakhani-pass {
+  background-image: url("public/chandrakani-pass.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.har-ki-dun {
+  background-image: url("public/har-ki-dun.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.bhrigu-lake {
+  background-image: url("public/bhrigu-lake.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.sar-pass {
+  background-image: url("public/sar-pass.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.hampta {
+  background-image: url("public/hampta-pass.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
